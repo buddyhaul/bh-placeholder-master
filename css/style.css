@@ -1,0 +1,83 @@
+* { margin: 0; padding: 0; }
+html { background-color: #f2f0e4; }
+/*experimented with other colours, F6F3DD looked decent*/
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1 { font: 56px "bebas_neueregular", Helvetica, Arial, Sans-Serif; text-align: center; }
+h2 { font: 38px "bebas_neueregular", Helvetica, Arial, Sans-Serif; text-align: center; }
+h3 { font: 14px "bebas_neueregular", Helvetica, Arial, Sans-Serif; }
+h4 { font: 26px "bebas_neueregular", Helvetica, Arial, Sans-Serif; }
+a {	text-decoration: none; }
+.heading {
+	margin-top: 15px;
+	padding-bottom: 10px; 
+}
+.center {
+	margin: 5px auto 10px;
+	width:516px;
+}
+.textbody {
+margin: 5px auto 10px;
+	width:1300px;
+	padding-bottom: 15px;
+}
+.signupbox {
+	margin: 0 auto 25px;
+	width:350px;
+}
+#logo {
+	width: 516px;
+	height: 513px;
+	padding: 10px 0; 
+}
+.menu-item { padding: 10px 12px; }
+nav ul {
+	margin:0;
+	padding: 0;
+	list-style-type:none;
+	text-align: center;
+}
+nav ul li {	display: inline; }
+nav ul li a img {	width: 48px; height: 48px; }
+#signup input[type="email"] {
+    background: #FFFFFF;
+    border: 0 none;
+    font: 12px Helvetica, Arial, Sans-serif;
+    width: 80%;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+}
+#signup input[type="submit"] {
+	background-color: #FFFFFF;
+	-moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    border-radius: 18px;
+    border: none;
+    font: 15px "bebas_neueregular", Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    width: 15%;
+    height: 25px;
+    display: block;
+    float: right;
+    padding: 5px 5px;
+
+
+.enabled:hover {
+	color: #0fa99f;
+}
+footer #copyright h3 {
+	text-align: center; 
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+footer #copyright a { color: black; }
+footer #copyright a:hover { color:#0fa99f; }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8' />
+	<title>BuddyHaul | On-Demand Local Delivery Service</title>
+	<link rel="icon" href="images/logo.gif">
+	<meta content="en" http-equiv="content-language"></meta>
+	<meta name="description" content="We provide an on-demand delivery service by connecting you with a buddy that has a vehicle to get the job done.">
+	<link rel='stylesheet' href='css/style.css' type="text/css" charset="utf-8"/>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var target_date = new Date("01/31/2016 12:00 AM EDT").getTime();
+			var days, hours, minutes, seconds;
+			var countdown = document.getElementById("countdown");
+
+			setInterval(function() {
+				// calculate time left
+				var current_date = new Date().getTime();
+				var seconds_left = (target_date - current_date) / 1000;
+				days = ("0" + parseInt(seconds_left / 86400)).slice(-2);
+				seconds_left = seconds_left % 86400;
+				hours = ("0" + parseInt(seconds_left / 3600)).slice(-2);
+				seconds_left = seconds_left % 3600;
+				minutes = ("0" + parseInt(seconds_left / 60)).slice(-2);
+				seconds = ("0" + parseInt(seconds_left % 60)).slice(-2);
+				// update countdown
+				countdown.innerHTML = days + " Days " + hours + " Hours " + minutes + " Mins " + seconds + " Secs ";
+			}, 1000 );
+
+			$('form > input').keyup(function () {
+				if ($(this).val() != '') {
+					$('#submitbtn').removeAttr('disabled');
+					$('#submitbtn').attr('class','enabled');
+				}
+				else {
+					$('#submitbtn').attr('disabled','disabled');
+					$('#submitbtn').removeAttr('class');
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="heading"><h1>Stay tuned! buddyhaul.ca will be launching in...</h1>
+	<div class="heading"><h1 id="countdown">COMING SOON</h1></div>
+	<div class="center"><img id="logo" src="images/logo.gif"></div>
+
+<br>
+
+	<div class="heading"><h2>What is BuddyHaul?</h2>
+</div>
+	<div class="textbody"><h4>BuddyHaul is an online marketplace that connects people who are in need of an on-demand, short-haul moving and delivery service with a buddy that has a vehicle to get the job done. BuddyHaul provides an alternative to expensive and inconvenient truck rentals and delivery/moving companies, with a convienient, affordable, and community-oriented delivery service.</h4>
+</div>
+	<div class="textbody"><h4>We are a Canadian company currently servicing the GTA area. However, we are expanding and will be launching our services nationwide.</h4>
+</div>
+
+<br>
+
+	<div class="heading"><h2>What do we deliver?</h2>
+</div>
+	<div class="textbody"><h4>We deliver large, bulky items that require the use of a truck of van to transport.</h4>
+</div>
+	<div class="textbody"><h4>Typical requests include:.</h4>
+</div>
+	<div class="textbody"><h4>1. Furniture (couches, desks, tables etc.)</h4>
+</div>
+	<div class="textbody"><h4>2. Apartment Moves (basement apartments, 1-2 bedroom apartments etc.)</h4>
+</div>
+	<div class="textbody"><h4>3. Kijiji item deliveries</h4>
+</div>
+	<div class="textbody"><h4>4. Landscaping Material Moves</h4>
+</div>
+	<div class="textbody"><h4>5. Junk Removal and Dumping</h4>
+</div>
+
+<br>
+
+	<div class="heading"><h2>Our website will be launching soon. In the meantime, you can still request a delivery now:</h2>
+</div>
+	<div class="textbody"><h4>Call us at (647) 464-4164 or Send us an email <a href="mailto:buddyhaul@gmail.com">buddyhaul@gmail.com</a> with the following information:</h4>
+</div>
+	<div class="textbody"><h4>  - Pick-up address</h4>
+</div>
+	<div class="textbody"><h4>  - Drop-off address</h4>
+</div>
+	<div class="textbody"><h4>  - Items to be delivered (include pictures if available)</h4>
+</div>
+
+<br>
+<br>
+
+	<h2>Become a Buddy - Call us at (647) 464-4164 to register and earn up to $60/hr</h2>
+
+<br>
+<br>
+
+	<nav id="menu">
+		<ul>
+			<li>
+				<a title="Like us on Facebook" href="https://facebook.com/buddyhaulcanada" class="menu-item">
+	    			<img src="images/facebook1.png" onmouseover="this.src='images/facebook2.png'" onmouseout="this.src='images/facebook1.png'" />
+				</a>
+			</li>
+			<li>
+				<a title="Follow us on Twitter" href="https://twitter.com/buddy_haul" class="menu-item">
+	    			<img src="images/twitter1.png" onmouseover="this.src='images/twitter2.png'" onmouseout="this.src='images/twitter1.png'" />
+				</a>
+			</li>
+			<li>
+				<a title="Follow us on Instagram" href="https://instagram.com/buddyhaul" class="menu-item">
+	    			<img src="images/instagram1.png" onmouseover="this.src='images/instagram2.png'" onmouseout="this.src='images/instagram1.png'" />
+				</a>
+			</li>
+			<li>
+				<a title="Subscribe to our YouTube" href="https://youtube.com/buddyhaul" class="menu-item">
+	    			<img src="images/youtube1.png" onmouseover="this.src='images/youtube2.png'" onmouseout="this.src='images/youtube1.png'" />
+				</a>
+			</li>
+			<li>
+				<a title="Send us an Email" href="mailto:buddyhaul@gmail.com" class="menu-item">
+	    			<img src="images/mail1.png" onmouseover="this.src='images/mail2.png'" onmouseout="this.src='images/mail1.png'" />
+				</a>
+			</li>			
+		</ul>
+	</nav>
+	<footer>
+		<div id="copyright">
+			<h3>&copy; 2015 BuddyHaul Inc. </h3>
+		</div>
+	</footer>
+</body>
+</html>
